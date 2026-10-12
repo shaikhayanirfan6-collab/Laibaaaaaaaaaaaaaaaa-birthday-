@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08030b">
+  <title>For My Special Jan ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+  <div class="petals" id="petals"></div>
+
+  <header class="topbar">
+    <span>For My Special Jan <span class="pink">♡</span></span>
+    <button class="music-btn" id="heartBtn" aria-label="Make hearts">♡</button>
+  </header>
+
+  <main>
+    <section class="screen intro active" id="screen1">
+      <div class="moon"></div>
+      <div class="heart-art">♡</div>
+      <p class="eyebrow">A LITTLE SURPRISE FOR SOMEONE SPECIAL</p>
+      <h1 class="script-title">Laiba's<br>Birthday</h1>
+      <p class="subtext">Some beautiful souls deserve a beautiful day.</p>
+      <button class="primary-btn" data-next="screen2">Begin Our Story <span>→</span></button>
+      <p class="tiny">Made with love, just for you ♡</p>
+    </section>
+
+    <section class="screen envelope-screen" id="screen2">
+      <p class="eyebrow">A SPECIAL MESSAGE</p>
+      <h2>For your eyes only ♡</h2>
+      <button class="envelope" id="openEnvelope" aria-label="Open the letter">
+        <span class="envelope-flap"></span>
+        <span class="letter">For my<br><strong>Jan ♡</strong></span>
+        <span class="seal">♡</span>
+      </button>
+      <p class="script-caption" id="envelopeHint">Tap the letter to open</p>
+      <button class="primary-btn hidden" id="envelopeNext" data-next="screen3">Read My Message →</button>
+    </section>
+
+    <section class="screen message-screen" id="screen3">
+      <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+      <p class="pretitle">Happy Birthday</p>
+      <h1 class="script-title">Laiba <span class="pink">♡</span></h1>
+      <div class="divider-heart">✦ ♡ ✦</div>
+      <p class="message">
+        Jan, tum meri zindagi ka woh hissa ho jo har din ko
+        khaas bana deta hai. Tumhari muskurahat, tumhari baatein
+        aur tumhara saath mere liye bohat qeemti hai.
+      </p>
+      <p class="message">
+        I hope your new year of life brings you happiness,
+        success, peace, and all the beautiful things you deserve.
+      </p>
+      <p class="script-caption">You are truly special ♡</p>
+      <button class="primary-btn" data-next="screen4">Our Memory →</button>
+    </section>
+
+    <!-- ONE PHOTO ONLY -->
+    <section class="screen gallery-screen" id="screen4">
+      <p class="eyebrow">A LITTLE MEMORY, A LOT OF LOVE</p>
+      <h1 class="script-title">My Favourite <span class="pink">♡</span></h1>
+      <p class="subtext">One picture, a thousand feelings.</p>
+
+      <div class="gallery single-gallery">
+        <button class="photo" aria-label="Open photo">
+          <img src="images/laiba1.jpg" alt="My special Jan">
+          <span>My favourite person ♡</span>
+        </button>
+      </div>
+
+      <p class="gallery-note">Some memories stay in the heart forever. ❤️</p>
+      <button class="primary-btn" data-next="screen5">One More Surprise →</button>
+    </section>
+
+    <section class="screen secret-screen" id="screen5">
+      <div class="glow-heart">♥</div>
+      <p class="eyebrow">A LITTLE SECRET FROM MY HEART</p>
+      <h1 class="script-title">Dear Jan...</h1>
+      <div class="letter-card">
+        <p>
+          Hahaha Jan ho tum meri favourite person. ❤️
+          Tumhari khushi mere liye bohat matter karti hai.
+        </p>
+        <p>
+          Hamesha muskurati rehna, apne dreams poore karna
+          aur kabhi mat bhoolna ke tum bohat special ho.
+        </p>
+        <p>
+          May Allah bless you with happiness, good health,
+          success and countless reasons to smile. Ameen. ♡
+        </p>
+      </div>
+      <button class="primary-btn" data-next="screen6">Your Birthday Wish →</button>
+    </section>
+
+    <section class="screen countdown-screen" id="screen6">
+      <p class="eyebrow">THE DAY WE CELEBRATE YOU</p>
+      <h1 class="script-title">Countdown <span class="pink">♡</span></h1>
+      <p class="subtext">31 October • Your special day</p>
+
+      <div class="timer">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+
+      <div class="night-scene">
+        <div class="night-moon"></div>
+        <div class="night-heart">♡</div>
+        <p class="script-caption">The world is a little brighter because of you.</p>
+      </div>
+      <button class="primary-btn" data-next="screen7">The Final Surprise →</button>
+    </section>
+
+    <section class="screen final-screen" id="screen7">
+      <div class="final-heart">♡</div>
+      <p class="eyebrow">YOUR SPECIAL DAY</p>
+      <p class="pretitle">Happy Birthday</p>
+      <h1 class="script-title">Laiba <span class="pink">♡</span></h1>
+      <p class="message">
+        May your life always be filled with happiness,
+        love, success and beautiful memories.
+      </p>
+      <p class="script-caption">
+        Keep smiling, always...<br>Because you are magic. ♡
+      </p>
+      <button class="primary-btn" id="celebrateBtn">Celebrate ✨</button>
+      <button class="text-btn" id="restartBtn">Read it all again ↺</button>
+      <p class="tiny">Made with love — just for you ♡</p>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button id="closeLightbox" aria-label="Close photo">×</button>
+    <img id="lightboxImage" src="" alt="Selected memory">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
